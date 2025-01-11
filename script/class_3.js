@@ -11,3 +11,23 @@ console.log(undefined == 0) // false
 // ===
 
 console.log('2' === 2) // false/true
+
+
+// stack 
+let str = 'asad'
+let change = str
+
+str = 'abdul'
+console.log(change) 
+
+// heap
+
+let hero = {
+    name : 'asad',
+    age:12
+}
+
+let hero1 = hero
+hero.age = 22
+
+console.log(hero1);
