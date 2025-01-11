@@ -18,26 +18,25 @@
 
 
 let myString = 'Istanbul'
-console.log(myString)
-console.log(typeof myString)
+// console.log(typeof myString)
 
 let myNumber = +17230346784
-console.log(typeof myNumber)
+// console.log(typeof myNumber)
 
 let isLoggedIn = false
-console.log(typeof isLoggedIn)
+// console.log(typeof isLoggedIn)
 
 let unDefined;
-console.log(unDefined)
+// console.log(unDefined)
 
 let Null = null
-console.log(typeof Null)
+// console.log(typeof Null)
 
 let symbol = Symbol('hello master')
-console.log(typeof symbol)
+// console.log(typeof symbol)
 
 let hero = ['kings','master','slave','lion']
-console.log(typeof hero)
+// console.log(typeof hero)
 
 let obj = {
     name : 'asad',
@@ -50,7 +49,7 @@ console.log(typeof obj)
 function myFun() {
     console.log(typeof'hello wrold')
 }
-myFun()
+// myFun()
 
 let myvla = 12;
 
@@ -69,16 +68,49 @@ let myvla = 12;
 let Num1 = 33
 let convertStr = String(Num1)
 
-console.log(convertStr)
-console.log(typeof convertStr)
+// console.log(convertStr)
+// console.log(typeof convertStr)
 
 
 let isloggedIn = 1
 let convertBoolean = Boolean(isloggedIn)
 
-console.log(convertBoolean)
-console.log(typeof convertBoolean)
+// console.log(convertBoolean)
+// console.log(typeof convertBoolean)
 
 
 //  '' => false
 //  'asad' => true
+
+
+//                                  Operation in javaScript 
+
+//      basic operation 
+// console.log(2+3)
+// console.log(2-3)
+// console.log(2*3)
+// console.log(2**3)
+// console.log(2%3)
+// console.log(2/3)
+
+console.log(1 +'3') // 13
+console.log('3'+ 3) // 33
+console.log(1 + 1 + '2') // 22
+console.log('1' + 2 + 2) // 122
+
+console.log(((2 + 2) + 2) * 2 ) //  16
+
+// postFix & preFix 
+
+// postFix
+let x = 10
+let z = x++
+
+console.log(`x : ${x} z : ${z}`)
+
+// preFix
+let a = 4
+let b = ++a
+
+console.log(`a : ${a} b ${b}`)
+
