@@ -51,3 +51,34 @@ function myFun() {
     console.log(typeof'hello wrold')
 }
 myFun()
+
+let myvla = 12;
+
+
+// aleart(3+4) // using node not working
+
+'use strict' // for new version in js 
+
+// symbol is use :: to identify for unique ness // in REACT
+
+// null is :: standAlone Value
+
+
+//  CONVERSION IN JAVASCRIPT
+
+let Num1 = 33
+let convertStr = String(Num1)
+
+console.log(convertStr)
+console.log(typeof convertStr)
+
+
+let isloggedIn = 1
+let convertBoolean = Boolean(isloggedIn)
+
+console.log(convertBoolean)
+console.log(typeof convertBoolean)
+
+
+//  '' => false
+//  'asad' => true
