@@ -35,10 +35,10 @@ otherUser.greadding = function(){
 // +++++++++++++++++++++++++++++++ NEXT VIDEO START ++++++++++++++++++++++++++++++
 
 let singleTon = new Object() // SINGLETON 
-console.log(singleTon)
+// console.log(singleTon)
 
 let nonSingleTone = {}   // nonSingleTone
-console.log(nonSingleTone)
+// console.log(nonSingleTone)
 
 
 let regularUser = {
@@ -51,10 +51,8 @@ let regularUser = {
         }
     }
 }
-// let userData = {firstName:Names}
-// console.log(userData.Names)
 
-console.log(regularUser.userName.userFinalName.userFullName)
+// console.log(regularUser.userName.userFinalName.userFullName)
 
 // Merge tow object 
 
@@ -70,4 +68,38 @@ let obj2 = {
 
 // let ansObj = {...obj1,...obj2} // spread Operater
 let ansObj = Object.assign({}, obj1,obj2) // assign method
-console.log(ansObj)
+// console.log(ansObj)
+
+
+// kai bar kya hota ha ap kay pass data ata ha {[object or an array may]}  
+
+const myData = [
+    {
+        user1 : 'danish',
+        id : 321
+    },
+    {
+        userr2 : 'tamoor',
+        id : 654
+    }
+]
+
+console.log(myData[0].id)
+
+console.log(Object.keys(obj1)) // array may convert karta ha
+console.log(Object.values(obj1)) // arrays may convert karta ha
+
+// console.log(obj1.hasOwnProperty('nami'))
+
+//  +++++++++++++++++++++++++++++ NEXT VIDEO +++++++++++++++++++++++++++++++++++
+
+//                      Object de-structure and JSON API
+
+let ourLife = {
+    Name : 'asadullah',
+    age : 32,
+    city : 'Rahim yar khan'
+}
+
+let {Name:n,age:a,city:c} = ourLife
+console.log(n,a,c) 
