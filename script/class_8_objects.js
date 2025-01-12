@@ -1,0 +1,73 @@
+//                                           OBJECTS  IN JAVASCRIPT 
+
+// HEAP MOMERY // consept
+let firstObj = {
+    nName : 'iamasadch',
+    id : 123465,
+    nEmail : 'iamchasad@gmail.com',
+}
+
+let secondObj = firstObj
+secondObj.nName = 'asadulah' 
+// console.log(secondObj)
+// console.log(firstObj)
+
+let mySymbol = Symbol('key1')
+
+let otherUser = {
+    oneUser : 'mapia',
+    mapiaId : 213243,
+    mapiaEmail : 'mapia2gmail.com',
+    [mySymbol] : 'chacha'
+}
+
+// console.log(otherUser['mapiaId']);
+// console.log(otherUser);
+// console.log(otherUser[mySymbol]);
+
+
+otherUser.greadding = function(){
+    console.log(`hello js user ${this.oneUser}`)
+}
+// console.log(otherUser.greadding())
+
+
+// +++++++++++++++++++++++++++++++ NEXT VIDEO START ++++++++++++++++++++++++++++++
+
+let singleTon = new Object() // SINGLETON 
+console.log(singleTon)
+
+let nonSingleTone = {}   // nonSingleTone
+console.log(nonSingleTone)
+
+
+let regularUser = {
+    email: 'usre@gmail.com',
+    userName : {
+        firtsName : 'asad',
+        lastName : 'ullah',
+        userFinalName:{
+            userFullName : 'asadullah'
+        }
+    }
+}
+// let userData = {firstName:Names}
+// console.log(userData.Names)
+
+console.log(regularUser.userName.userFinalName.userFullName)
+
+// Merge tow object 
+
+let obj1 = {
+    nami : 'asad',
+    kahani : 1234
+}
+
+let obj2 = {
+    nami : 'abdul',
+    kahani : 5678
+}
+
+// let ansObj = {...obj1,...obj2} // spread Operater
+let ansObj = Object.assign({}, obj1,obj2) // assign method
+console.log(ansObj)
